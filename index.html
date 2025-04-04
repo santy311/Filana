@@ -1,1 +1,374 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filena - Revolutionary File Infrastructure on Solana</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-purple-900 to-black text-white font-['Inter']"
+  >
+    <nav class="fixed w-full bg-black/30 backdrop-blur-md z-50 px-6 py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold gradient-text">Filena</h1>
+        <div class="flex gap-4">
+          <a href="#market" class="hover:text-purple-400 transition-colors"
+            >Market</a
+          >
+          <a href="#features" class="hover:text-purple-400 transition-colors"
+            >Features</a
+          >
+          <a href="#roadmap" class="hover:text-purple-400 transition-colors"
+            >Roadmap</a
+          >
+          <a
+            href="https://pitch.com"
+            target="_blank"
+            class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-full transition-colors"
+          >
+            Pitch Deck
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 text-center">
+          <span class="text-purple-400 mb-4 inline-block"
+            >The Future of File Infrastructure</span
+          >
+          <h1 class="text-7xl font-bold mb-8 gradient-text">
+            Revolutionizing<br />File Access & Monetization
+          </h1>
+          <p class="text-xl mb-12 text-gray-300 max-w-2xl mx-auto">
+            Secure, decentralized file sharing with built-in monetization
+            powered by Proxy Re-Encryption technology on Solana
+          </p>
+          <div class="flex justify-center gap-4">
+            <a
+              href="#features"
+              class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-full text-lg transition-all hover:scale-105"
+            >
+              Explore Features
+            </a>
+            <a
+              href="#market"
+              class="border border-purple-600 hover:bg-purple-600/20 px-8 py-3 rounded-full text-lg transition-all hover:scale-105"
+            >
+              Market Potential
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem Statement Section -->
+      <section class="py-20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-16">The Problem</h2>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <div class="bg-purple-900/20 p-6 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4">Current Limitations</h3>
+                <ul class="space-y-3 text-gray-300">
+                  <li>
+                    • Files stored on IPFS/Walrus are either publicly visible to
+                    everyone or completely private
+                  </li>
+                  <li>• No native way to monetize encrypted content</li>
+                  <li>
+                    • Creators must trust centralized platforms for paid access
+                    control
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-purple-900/20 p-6 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4">Example Scenario</h3>
+                <p class="text-gray-300">
+                  When Alice wants to monetize her video content:
+                </p>
+                <ul class="space-y-3 text-gray-300 mt-3">
+                  <li>
+                    • She can't upload unencrypted - anyone could access without
+                    paying
+                  </li>
+                  <li>
+                    • If she uploads encrypted, buyers must trust she'll provide
+                    the key
+                  </li>
+                  <li>• No trustless way to handle pay-for-access</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-purple-900/20 p-8 rounded-xl">
+              <h3 class="text-2xl font-bold mb-6">Enter Filena's Solution</h3>
+              <div class="space-y-6 text-gray-300">
+                <div>
+                  <h4 class="text-xl font-bold mb-2 text-purple-400">
+                    Proxy Re-Encryption (PRE)
+                  </h4>
+                  <p>A revolutionary cryptographic method that enables:</p>
+                  <ul class="list-disc ml-6 mt-2 space-y-2">
+                    <li>Trustless file sharing with built-in encryption</li>
+                    <li>Automated access control via smart contracts</li>
+                    <li>Pay-to-access without intermediaries</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-xl font-bold mb-2 text-purple-400">
+                    How It Works
+                  </h4>
+                  <ol class="list-decimal ml-6 space-y-2">
+                    <li>Creator encrypts file with their public key</li>
+                    <li>Buyer makes payment through Solana smart contract</li>
+                    <li>Contract generates re-encryption key for buyer</li>
+                    <li>Buyer accesses content with their own private key</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Market Stats Section -->
+      <section id="market" class="py-20 bg-black/30">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-16">
+            Market Opportunity
+          </h2>
+          <div class="grid md:grid-cols-3 gap-12 mb-16">
+            <div
+              class="text-center p-8 bg-purple-900/20 rounded-xl feature-card"
+            >
+              <div class="text-4xl font-bold mb-2 gradient-text stat-number">
+                $200B+
+              </div>
+              <p class="text-gray-300">Global Cloud Storage Market by 2025</p>
+            </div>
+            <div
+              class="text-center p-8 bg-purple-900/20 rounded-xl feature-card"
+            >
+              <div class="text-4xl font-bold mb-2 gradient-text stat-number">
+                85%
+              </div>
+              <p class="text-gray-300">
+                Of Business Data is Unstructured Files
+              </p>
+            </div>
+            <div
+              class="text-center p-8 bg-purple-900/20 rounded-xl feature-card"
+            >
+              <div class="text-4xl font-bold mb-2 gradient-text stat-number">
+                60%
+              </div>
+              <p class="text-gray-300">YoY Growth in Web3 File Storage</p>
+            </div>
+          </div>
+          <div class="text-center max-w-3xl mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Why Filena?</h3>
+            <p class="text-gray-300 mb-8">
+              We're targeting a massive market with a revolutionary solution
+              that combines security, decentralization, and seamless
+              monetization. Our PRE technology enables trustless file sharing
+              and access control, solving a critical problem in Web3.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-16">
+            Revolutionary Features
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-purple-900/30 p-8 rounded-xl feature-card">
+              <i class="fas fa-lock text-3xl mb-4 text-purple-400"></i>
+              <h3 class="text-xl font-bold mb-4">PRE Technology</h3>
+              <p class="text-gray-300">
+                Our patent-pending Proxy Re-Encryption enables secure file
+                sharing without exposing private keys or content. Perfect for
+                enterprise adoption.
+              </p>
+            </div>
+            <div class="bg-purple-900/30 p-8 rounded-xl feature-card">
+              <i class="fas fa-coins text-3xl mb-4 text-purple-400"></i>
+              <h3 class="text-xl font-bold mb-4">Built-in Monetization</h3>
+              <p class="text-gray-300">
+                Automated, trustless monetization for file access. Create new
+                revenue streams instantly with programmable access control.
+              </p>
+            </div>
+            <div class="bg-purple-900/30 p-8 rounded-xl feature-card">
+              <i class="fas fa-shield-alt text-3xl mb-4 text-purple-400"></i>
+              <h3 class="text-xl font-bold mb-4">Enterprise-Grade Security</h3>
+              <p class="text-gray-300">
+                Military-grade encryption combined with decentralized storage on
+                Walrus/IPFS. Full compliance with data protection regulations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section id="how-it-works" class="py-20 bg-black/30">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-16">
+            Technology Overview
+          </h2>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div
+                class="mb-8 hover:bg-purple-900/20 p-6 rounded-xl transition-all"
+              >
+                <h3 class="text-2xl font-bold mb-4 gradient-text">
+                  1. Secure Upload & Encrypt
+                </h3>
+                <p class="text-gray-300">
+                  Military-grade encryption ensures your files remain private
+                  and secure.
+                </p>
+              </div>
+              <div
+                class="mb-8 hover:bg-purple-900/20 p-6 rounded-xl transition-all"
+              >
+                <h3 class="text-2xl font-bold mb-4 gradient-text">
+                  2. Smart Contract Integration
+                </h3>
+                <p class="text-gray-300">
+                  Automated access control and payment processing through Solana
+                  smart contracts.
+                </p>
+              </div>
+              <div class="hover:bg-purple-900/20 p-6 rounded-xl transition-all">
+                <h3 class="text-2xl font-bold mb-4 gradient-text">
+                  3. Instant Access
+                </h3>
+                <p class="text-gray-300">
+                  Lightning-fast file access through our distributed network.
+                </p>
+              </div>
+            </div>
+            <div class="bg-purple-900/30 p-8 rounded-xl feature-card">
+              <pre class="text-sm"><code class="language-javascript">
+// Filena PRE Protocol
+class FileAccess {
+  async encrypt(file, publicKey) {
+    return E(file, pkA);
+  }
+  
+  async requestAccess(fileId, payment) {
+    // Verify payment on Solana
+    const reEncryptionKey = 
+      await generateReEncryptionKey();
+    return reEncryptionKey;
+  }
+  
+  async decrypt(encryptedFile, privateKey) {
+    return D(reEncrypted, skB);
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Roadmap Section -->
+      <section id="roadmap" class="py-20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold text-center mb-16">
+            Roadmap to Success
+          </h2>
+          <div class="grid md:grid-cols-4 gap-8">
+            <div class="p-6 bg-purple-900/20 rounded-xl feature-card">
+              <h3 class="text-xl font-bold mb-4 gradient-text">Q2 2025</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li>• MVP Development</li>
+                <li>• Security Audits</li>
+                <li>• Beta Testing</li>
+              </ul>
+            </div>
+            <div class="p-6 bg-purple-900/20 rounded-xl feature-card">
+              <h3 class="text-xl font-bold mb-4 gradient-text">Q3 2025</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li>• Enterprise Partnerships</li>
+                <li>• SDK Release</li>
+                <li>• Developer Tools</li>
+              </ul>
+            </div>
+            <div class="p-6 bg-purple-900/20 rounded-xl feature-card">
+              <h3 class="text-xl font-bold mb-4 gradient-text">Q4 2025</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li>• Global Launch</li>
+                <li>• API Marketplace</li>
+                <li>• Enterprise Solutions</li>
+              </ul>
+            </div>
+            <div class="p-6 bg-purple-900/20 rounded-xl feature-card">
+              <h3 class="text-xl font-bold mb-4 gradient-text">2026</h3>
+              <ul class="space-y-2 text-gray-300">
+                <li>• Mobile Apps</li>
+                <li>• AI Integration</li>
+                <li>• Global Expansion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="py-20 bg-black/30">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-4xl font-bold mb-8 gradient-text">
+            Join the Revolution
+          </h2>
+          <p class="text-xl mb-12 text-gray-300 max-w-2xl mx-auto">
+            Be part of the next generation of file infrastructure. Partner with
+            us to shape the future of secure, decentralized file sharing.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a
+              href="mailto:contact@filena.io"
+              class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-full text-lg inline-block transition-all hover:scale-105"
+            >
+              Contact for Partnership
+            </a>
+            <a
+              href="https://pitch.com"
+              target="_blank"
+              class="border border-purple-600 hover:bg-purple-600/20 px-8 py-3 rounded-full text-lg inline-block transition-all hover:scale-105"
+            >
+              View Pitch Deck
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black/30 py-12">
+      <div class="container mx-auto px-6 text-center text-gray-400">
+        <p>© 2025 Filena. Built on Solana. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

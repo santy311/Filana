@@ -1,0 +1,90 @@
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(168, 85, 247, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(168, 85, 247, 0.4); }
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom Styles */
+.gradient-text {
+  background: linear-gradient(45deg, #f3f4f6, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientBG 6s ease infinite;
+  background-size: 200% 200%;
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(168, 85, 247, 0.5);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+section {
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.8);
+}
+
+/* Code Block Styling */
+pre code {
+  display: block;
+  padding: 1.5em;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+}
+
+/* Stats Counter Animation */
+.stat-number {
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+  transition: all 0.3s ease;
+} 
